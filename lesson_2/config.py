@@ -38,6 +38,11 @@ UNKNOWN_ERROR = 999  # Нестандартная ошибка
 
 StandartServerCodes = BASIC_NOTICE, OK, ACCEPTED, WRONG_REQUEST, SERVER_ERROR, IMPORTANT_NOTICE, CREATED, NO_AUTH, WRONG_PASSW, BANNED, NOT_FOUND, GONE, INTERNAL_ERROR, SHUTDOWN
 
+# База данных для хранения данных сервера:
+SERVER_DATABASE = 'sqlite:///server_base.db3'
+COMMON_CHAT = "Общий чат"
+COMMON_CHAT_PWD = "11"
+
 
 class UnknownCode(Exception):
     def __init__(self, code):
