@@ -1,0 +1,47 @@
+2021-11-29 18:28:44,997 - INFO - server: start_server - Запуск сервера! Готов к приему клиентов! 
+ 
+2021-11-29 18:28:55,041 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52602 
+2021-11-29 18:28:55,042 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,042 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,043 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,043 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,052 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52603 
+2021-11-29 18:28:55,052 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,053 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,053 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,053 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,081 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52607 
+2021-11-29 18:28:55,082 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,082 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,082 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,082 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,083 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52608 
+2021-11-29 18:28:55,084 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,084 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,084 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,084 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,113 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52609 
+2021-11-29 18:28:55,114 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,114 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,114 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,115 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52604 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,552 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52606 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,552 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52605 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:28:55,552 - INFO - decorators: deco_log_call - Mon Nov 29 18:28:55 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.28.55', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:28:55,552 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
+2021-11-29 18:29:06,253 - INFO - server: start_server - Получен запрос на соединение от 127.0.0.1:52610 
+2021-11-29 18:29:06,253 - INFO - server: start_server - Принято сообщение от клиента: {'action': 'presence', 'time': '2021-11-29-18.29.06', 'user': {'account_name': 'Simper', 'account_password': 123}} 
+2021-11-29 18:29:06,253 - INFO - decorators: deco_log_call - Mon Nov 29 18:29:06 2021 Вызван декоратор Log для check_correct_presence_and_response с параметрами (<__main__.Server object at 0x000000765E6D4400>, {'action': 'presence', 'time': '2021-11-29-18.29.06', 'user': {'account_name': 'Simper', 'account_password': 123}}) из функции my_server.start_server() 
+2021-11-29 18:29:06,253 - INFO - server: start_server - Приветствуем пользователя Simper! 
+2021-11-29 18:29:06,253 - INFO - server: start_server - Отправка ответа клиенту: {'response': 200} 
