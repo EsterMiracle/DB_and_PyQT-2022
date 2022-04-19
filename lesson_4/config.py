@@ -19,6 +19,9 @@ MESSAGE = 'message'
 MAIN_CHANNEL = '#all'
 SERVER = 'server'
 
+GET_CONTACTS = 'get_contacts'
+USER_LOGIN = 'user_login'
+
 BASIC_NOTICE = 100
 OK = 200
 ACCEPTED = 202
@@ -39,9 +42,14 @@ UNKNOWN_ERROR = 999  # Нестандартная ошибка
 StandartServerCodes = BASIC_NOTICE, OK, ACCEPTED, WRONG_REQUEST, SERVER_ERROR, IMPORTANT_NOTICE, CREATED, NO_AUTH, WRONG_PASSW, BANNED, NOT_FOUND, GONE, INTERNAL_ERROR, SHUTDOWN
 
 # База данных для хранения данных сервера:
-SERVER_DATABASE = 'sqlite:///server_base.db3'
+SERVER_DATABASE_NAME = 'server_base.db3'
+SERVER_DATABASE = f'sqlite:///{SERVER_DATABASE_NAME}'
 COMMON_CHAT = "Общий чат"
 COMMON_CHAT_PWD = "11"
+
+CLIENT_DATABASE_NAME = 'client_base.db3'
+CLIENT_DATABASE = f'sqlite:///{CLIENT_DATABASE_NAME}'
+
 
 class UnknownCode(Exception):
     def __init__(self, code):
@@ -49,4 +57,3 @@ class UnknownCode(Exception):
 
     def __str__(self):
         return f'Неизвестный код ответа {self.code}'
-
