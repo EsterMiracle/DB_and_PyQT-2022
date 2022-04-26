@@ -5,9 +5,9 @@ from PyQt5.QtSql import QSqlRelationalTableModel, QSqlTableModel, QSqlRelational
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5 import uic
 
-from logs import server_config_log
-from decorators import Log
-from config import SERVER_DATABASE_NAME
+from lesson6.logs import server_config_log
+from lesson6.decorators import Log
+from lesson6.config import SERVER_DATABASE_NAME
 from server_database import ServerStorage
 from server import Server
 

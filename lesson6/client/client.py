@@ -3,17 +3,17 @@ import sys
 
 import argparse
 import logging
-import decorators
+import lesson6.decorators as decorators
 import time
 from datetime import datetime
 import pickle
 import threading
 import socket
-from config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+from lesson6.config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     OK, server_port, server_address, StandartServerCodes, UnknownCode, \
     MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE, RESPONSE, account, USER_LOGIN, GET_CONTACTS
-from meta import ClientVerifier
-from logs import client_config_log
+from lesson6.meta import ClientVerifier
+from lesson6.logs import client_config_log
 
 # Общая переменная для читателя и писателя сообщений
 # Последний пользователь, писавший в лс:

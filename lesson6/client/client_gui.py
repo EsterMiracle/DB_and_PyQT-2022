@@ -5,9 +5,9 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.uic import loadUi
 
-from lesson_5.logs import server_config_log, client_config_log
-from lesson_5.decorators import Log
-from lesson_5.config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+from lesson6.logs import server_config_log, client_config_log
+from lesson6.decorators import Log
+from lesson6.config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     OK, server_port, server_address, StandartServerCodes, UnknownCode, \
     MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE, RESPONSE, account
 

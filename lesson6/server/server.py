@@ -1,18 +1,18 @@
 import logging
 import select
 import sys
-from config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
+from lesson6.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
     ERROR, server_port, server_address, FROM, SHUTDOWN, \
     MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL, UNKNOWN_ERROR, GET_CONTACTS, USER_LOGIN
 import socket
-from decorators import Log
+from lesson6.decorators import Log, login_required
 import argparse
 import pickle
 
 from server_database import ServerStorage
-from logs import server_config_log
-from descriptors import SockVerify
-from meta import ServerVerifier
+from lesson6.logs import server_config_log
+from lesson6.descriptors import SockVerify
+from lesson6.meta import ServerVerifier
 
 log = logging.getLogger('Server_log')
 logger = Log(log)
@@ -73,6 +73,7 @@ class Server(metaclass=ServerVerifier):
         return message_list
 
     # Функция записи сообщений в сокеты клиентов
+    @login_required
     def write_messages(self, messages, to_clients, client_list):
         for message, sender in messages:
             if self.alive:

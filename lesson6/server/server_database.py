@@ -1,15 +1,15 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime, Text, Boolean, or_
 from sqlalchemy.orm import sessionmaker
-from config import SERVER_DATABASE, COMMON_CHAT, COMMON_CHAT_PWD
+from lesson6.config import SERVER_DATABASE, COMMON_CHAT, COMMON_CHAT_PWD
 from sqlalchemy.orm import declarative_base
 
 import datetime
 import hashlib
 
+Base = declarative_base()
+
 
 class ServerStorage:
-    Base = declarative_base()
-
     # Отображение таблицы всех пользователей
     class AllUsers(Base):
         __tablename__ = 'all_users'
@@ -89,7 +89,7 @@ class ServerStorage:
                                     connect_args={'check_same_thread': False})
 
         # Создаём таблицы
-        self.Base.metadata.create_all(self.engine)
+        Base.metadata.create_all(self.engine)
 
         # Создаём сессию
         session = sessionmaker(bind=self.engine)
