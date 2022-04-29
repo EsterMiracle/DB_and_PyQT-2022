@@ -1,1 +1,1 @@
-# DB_and_PyQT-2022
+# db_and_PyQT
