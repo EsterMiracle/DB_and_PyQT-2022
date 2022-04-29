@@ -5,11 +5,8 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.uic import loadUi
 
-from lesson6.logs import server_config_log, client_config_log
-from lesson6.decorators import Log
-from lesson6.config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
-    OK, server_port, server_address, StandartServerCodes, UnknownCode, \
-    MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE, RESPONSE, account
+from lesson7.logs import server_config_log, client_config_log
+from lesson7.decorators import Log
 
 from client_database import ClientStorage
 from client import Client
@@ -106,6 +103,7 @@ class UI(QMainWindow):
         stream_handler.setLevel(logging.DEBUG)
         stream_handler.setFormatter(client_config_log.log_format)
         log.addHandler(stream_handler)
+
 
 if __name__ == '__main__':  # Если мы запускаем файл напрямую, а не импортируем
     app = QApplication(sys.argv)  # Новый экземпляр QApplication

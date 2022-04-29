@@ -17,4 +17,3 @@ class SockVerify:
 
     def __set_name__(self, owner, my_attr):
         self.my_attr = my_attr
-

@@ -1,24 +1,25 @@
 import logging
 import select
 import sys
-from lesson6.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
+from lesson7.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
     ERROR, server_port, server_address, FROM, SHUTDOWN, \
     MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL, UNKNOWN_ERROR, GET_CONTACTS, USER_LOGIN
 import socket
-from lesson6.decorators import Log, login_required
+from lesson7.decorators import Log, login_required
 import argparse
 import pickle
 
 from server_database import ServerStorage
-from lesson6.logs import server_config_log
-from lesson6.descriptors import SockVerify
-from lesson6.meta import ServerVerifier
+from lesson7.logs import server_config_log
+from lesson7.descriptors import SockVerify
+from lesson7.meta import ServerVerifier
 
 log = logging.getLogger('Server_log')
 logger = Log(log)
 
 
 class ServerSocket(socket.socket):
+    """Запуск сокета для прослушивания клиентов"""
     port = SockVerify()
     address = SockVerify()
 
@@ -32,6 +33,7 @@ class ServerSocket(socket.socket):
 
 
 class Server(metaclass=ServerVerifier):
+    """Запуск сервера"""
     global log, logger
     # Список сокетов клиентов и словарь аккаунтов клиентов с информацией о сокете
     clients = []

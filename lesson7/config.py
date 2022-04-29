@@ -1,3 +1,4 @@
+"""Данные для подключения"""
 server_address = '0.0.0.0'
 server_port = 7780
 mode = 'f'
@@ -50,9 +51,14 @@ COMMON_CHAT_PWD = "11"
 CLIENT_DATABASE_NAME = 'client_base.db3'
 CLIENT_DATABASE = f'sqlite:///{CLIENT_DATABASE_NAME}'
 
+
 class UnknownCode(Exception):
     def __init__(self, code):
         self.code = code
 
     def __str__(self):
         return f'Неизвестный код ответа {self.code}'
+
+
+if __name__ == "__main__":
+    ...
