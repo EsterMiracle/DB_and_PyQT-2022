@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, DateTime, Text, Boolean, or_
 from sqlalchemy.orm import sessionmaker
-from lesson7.config import SERVER_DATABASE, COMMON_CHAT, COMMON_CHAT_PWD
+from lesson8.package_messenger.src.config import SERVER_DATABASE, COMMON_CHAT, COMMON_CHAT_PWD
 from sqlalchemy.orm import declarative_base
 
 import datetime

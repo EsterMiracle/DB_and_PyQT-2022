@@ -5,8 +5,8 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.uic import loadUi
 
-from lesson7.logs import server_config_log, client_config_log
-from lesson7.decorators import Log
+from lesson8.package_messenger.src.logs import client_config_log
+from lesson8.package_messenger.src.decorators import Log
 
 from client_database import ClientStorage
 from client import Client

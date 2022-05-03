@@ -3,17 +3,17 @@ import sys
 
 import argparse
 import logging
-import lesson7.decorators as decorators
+import lesson8.package_messenger.src.decorators as decorators
 import time
 from datetime import datetime
 import pickle
 import threading
 import socket
-from lesson7.config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
+from lesson8.package_messenger.src.config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     OK, server_port, server_address, StandartServerCodes, UnknownCode, \
-    MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE, RESPONSE, account, USER_LOGIN, GET_CONTACTS
-from lesson7.meta import ClientVerifier
-from lesson7.logs import client_config_log
+    MAIN_CHANNEL, SERVER, MSG, TO, FROM, MESSAGE, RESPONSE, account, GET_CONTACTS
+from lesson8.package_messenger.src.meta import ClientVerifier
+from lesson8.package_messenger.src.logs import client_config_log
 
 # Общая переменная для читателя и писателя сообщений
 # Последний пользователь, писавший в лс:
@@ -73,7 +73,6 @@ class Client(metaclass=ClientVerifier):
                 message = pickle.loads(sock.recv(1024))
                 log.info(f'Получено сообщение с сервера: {message}')
                 if message[FROM] == account_arg:
-                    # TODO
                     print(message[MESSAGE].replace(f'{account_arg}:> ', '(me)', 1))
                 else:
                     print(f'{message[MESSAGE]}')

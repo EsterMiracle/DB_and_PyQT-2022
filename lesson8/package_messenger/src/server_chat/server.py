@@ -1,18 +1,18 @@
 import logging
 import select
 import sys
-from lesson7.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
+from lesson8.package_messenger.src.config import ACTION, PRESENCE, TIME, RESPONSE, OK, WRONG_REQUEST, \
     ERROR, server_port, server_address, FROM, SHUTDOWN, \
-    MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL, UNKNOWN_ERROR, GET_CONTACTS, USER_LOGIN
+    MSG, TO, MESSAGE, SERVER, MAIN_CHANNEL, UNKNOWN_ERROR, GET_CONTACTS
 import socket
-from lesson7.decorators import Log, login_required
+from lesson8.package_messenger.src.decorators import Log, login_required
 import argparse
 import pickle
 
 from server_database import ServerStorage
-from lesson7.logs import server_config_log
-from lesson7.descriptors import SockVerify
-from lesson7.meta import ServerVerifier
+from lesson8.package_messenger.src.logs import server_config_log
+from lesson8.package_messenger.src.descriptors import SockVerify
+from lesson8.package_messenger.src.meta import ServerVerifier
 
 log = logging.getLogger('Server_log')
 logger = Log(log)

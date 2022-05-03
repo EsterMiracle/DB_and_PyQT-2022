@@ -15,8 +15,8 @@ import sys
 
 sys.path.append(os.path.abspath('../../client_chat'))
 sys.path.append(os.path.abspath('../../server_chat'))
-sys.path.append(os.path.abspath('../..'))   # папка lesson7
-sys.path.append(os.path.abspath('../../..'))  # папка корневого проекта
+sys.path.append(os.path.abspath('../../../..'))   # папка lesson8
+sys.path.append(os.path.abspath('../../../../..'))  # папка корневого проекта
 
 
 

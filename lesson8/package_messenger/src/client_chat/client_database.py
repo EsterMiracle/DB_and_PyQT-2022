@@ -2,7 +2,7 @@ from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-from lesson7.config import CLIENT_DATABASE
+from lesson8.package_messenger.src.config import CLIENT_DATABASE
 
 Base = declarative_base()
 
